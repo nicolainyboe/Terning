@@ -1,3 +1,36 @@
+let tasks = ["Gå en tur",
+    "Tag løbesko på",
+    "Ring til en ven",
+    "Lav en snack",
+    "Tænd fjernsynet",
+    "Tænd din kaffemaskine",
+    "Skriv til et familiemedlem",
+    "Lav en aftale",
+    "Pluk en blomst",
+    "Sæt musik på",
+    "Gør noget du har udsat",
+    "Mediter i 5 minutter",
+    "Lav en ret du aldrig har lavet før",
+    "Lyt til podcast",
+    "Nedskriv din dag på 5 linjer",
+    "Tag fat i opvaskebørsten",
+    "Kig ud af vinduet i 5 minutter",
+    "Sorter dine sokker",
+    "Skriv et kort til en fra din familie",
+    "Læg en kabale",
+    "Gør rent ét sted i dit hjem",
+    "Vand dine planter",
+    "Skift sengetøj",
+    "Sluk din telefon i 30 minutter",
+    "Spis et stykke frugt",
+    "Tag en powernap",
+    "Læg et puslespil",
+    "Bag noget",
+    "Luft ud",
+    "Plant noget",
+    "Tag armbøjninger"
+]
+
 let valX;
 let canIThrow = true;
 let throws = -1;
@@ -5,13 +38,11 @@ let throws = -1;
 function handleDeviceMotion(e) {
     valX = e.acceleration.x;
     valX = Math.floor(valX);
-    console.log(valX)
-    document.getElementById("nicodiv").innerHTML = "Your Acceleration " + valX;
-
     let tolerance = 20;
     if (threshold(valX, tolerance)) {
         if (canIThrow == true) {
-            document.getElementById("random").innerHTML = Math.floor(Math.random() * 10)
+            let number = Math.floor(Math.random() * 31)
+            document.getElementById("activity").innerHTML = tasks[number]
             throws++;
             if (throws == 2) {
                 canIThrow = false;
@@ -20,20 +51,7 @@ function handleDeviceMotion(e) {
 
         // do stuff if the difference between val and previous value if greater than tolerance
     }
-    document.getElementById("throw").innerHTML = "can i throw? " + canIThrow;
-
-    let textMessage = ""
-    if (throws == 0) {
-        textMessage = "Du har 2 kast tilbage"
-    } else if (throws == 1) {
-        textMessage = "du har 1 kast tilbage, tør du kaste igen?"
-    } else if (throws == 2) {
-        textMessage = "Du har ikke flere kast tilbage"
-    }
-
-    document.getElementById("throwsleft").innerHTML = textMessage;
 }
-
 
 function startDeviceMotion() {
 
