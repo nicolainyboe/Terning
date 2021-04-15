@@ -21,7 +21,10 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  /* visibility: collapse; */
+}
+
+.activity {
+  visibility: collapse;
 }
 
 .title-block {
