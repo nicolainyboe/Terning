@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Dice Your Loneliness Up</title>
-</head>
+  </head>
 
-<body onload="startDeviceMotion()">
+  <body onload="startDeviceMotion()">
     <div class="container">
-        <h3>Ryst din telefon for at komme i gang</h3>
+      <section class="title-block">
+        <div class="title">
+          <h3>Ryst din telefon for at få en aktivitet!</h3>
+          <h3 id="activity"></h3>
+        </div>
+      </section>
 
-        <div id="nicodiv">acceleration</div>
-
-        <div id="random">number</div>
-        <div id="throwsleft"></div>
-
-        <button onclick="startDeviceMotion()">X</button>
-
-        <div id=throw></div>
+      <section class="skema">
+        <div class="links">
+          <h4 class="link-title">Gjorde du det?</h4>
+          <div class="answers">
+            <button>Ja</button>
+            <button>Nej</button>
+          </div>
+        </div>
+      </section>
     </div>
-
-
-
-</body>
-<script src="threshold.js"></script>
-<script src="deviceShake.js"></script>
-
+  </body>
+  <script src="threshold.js"></script>
+  <script src="deviceShake.js"></script>
 </html>
