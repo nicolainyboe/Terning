@@ -38,6 +38,7 @@ let throws = 0;
 let timeout = false;
 
 let diceAudio = document.getElementById("myAudio");
+diceAudio.volume = 0;
 
 function handleDeviceMotion(e) {
     valX = e.acceleration.x;
@@ -74,7 +75,6 @@ function startDeviceMotion() {
                     window.addEventListener("devicemotion", handleDeviceMotion, false);
                     document.getElementById("start").style.visibility = "collapse";
                     document.getElementById("title").style.visibility = "visible";
-                    diceAudio.volume = 0;
                     diceAudio.play();
                 }
             })
