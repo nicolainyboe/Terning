@@ -65,6 +65,10 @@ function handleDeviceMotion(e) {
     }
 }
 
+function playaudio() {
+    diceAudio.play();
+}
+
 
 
 function startDeviceMotion() {
