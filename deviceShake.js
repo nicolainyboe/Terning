@@ -38,7 +38,7 @@ let throws = 0;
 let timeout = false;
 
 let diceAudio = document.getElementById("myAudio");
-diceAudio.volume = 0;
+
 
 function handleDeviceMotion(e) {
     valX = e.acceleration.x;
@@ -47,7 +47,7 @@ function handleDeviceMotion(e) {
     if (threshold(valX, tolerance)) {
         if (canIThrow == true && timeout == false) {
             let number = Math.floor(Math.random() * 31);
-            diceAudio.volume = 1;
+            diceAudio.muted = false
             document.getElementById("title").style.visibility = "collapse";
             document.getElementById("activity").style.visibility = "visible";
             document.getElementById("skema").style.visibility = "visible";
@@ -68,6 +68,8 @@ function handleDeviceMotion(e) {
 }
 
 function startDeviceMotion() {
+    document.getElementById("myAudio").muted = true;
+    diceAudio.play();
     if (typeof DeviceMotionEvent.requestPermission === "function") {
         DeviceMotionEvent.requestPermission()
             .then((permissionState) => {
@@ -75,7 +77,7 @@ function startDeviceMotion() {
                     window.addEventListener("devicemotion", handleDeviceMotion, false);
                     document.getElementById("start").style.visibility = "collapse";
                     document.getElementById("title").style.visibility = "visible";
-                    //diceAudio.play();
+
                 }
             })
             .catch(console.log("Vi har ikke fået adgang til DeviceMotion"));
