@@ -13,27 +13,30 @@
       <source src="sound/dice.mp3" type="audio/mp3" />
     </audio>
     <div class="container">
-      <section class="title-block">
-        <div class="title">
-          <button id="start" class="start" onclick="startDeviceMotion()">
-            Tryk her for at starte
-          </button>
-          <h3 class="shake" id="title">
-            Ryst din telefon for at få en aktivitet!
-          </h3>
-          <h3 id="activity"></h3>
+      <div class="activity-block">
+        <h3 class="activity"></h3>
+      </div>
+      <div class="title-block">
+        <button class="btn" id="start" onclick="startDeviceMotion()">
+          Tryk her for at starte
+        </button>
+        <h2 class="title" id="title">Ryst din telefon</h2>
+      </div>
+      <div class="buttons">
+        <h3 class="didyou">Vælger du at udføre aktiviteten?</h3>
+        <p>
+          Dit svar vil føre dig videre til et anonymt spørgeskema som led i
+          vores speciale.
+        </p>
+        <div class="buttons-container">
+          <a href="https://stiso.typeform.com/to/oFxPR95F" target="_blank"
+            ><button class="small-btn">Ja</button></a
+          >
+          <a href="https://stiso.typeform.com/to/bOF5e9MQ" target="_blank">
+            <button href="#" class="small-btn">Nej</button>
+          </a>
         </div>
-      </section>
-
-      <section class="skema" id="skema">
-        <div class="links">
-          <h4 class="link-title">Gjorde du det?</h4>
-          <div class="answers">
-            <button href="#">Ja</button>
-            <button href="#">Nej</button>
-          </div>
-        </div>
-      </section>
+      </div>
     </div>
   </body>
   <script src="threshold.js"></script>

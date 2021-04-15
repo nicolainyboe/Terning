@@ -6,55 +6,72 @@ body {
   background: #f0f4f4;
   color: #46b9c9;
   height: 100vh;
+  overflow: hidden;
 }
 
 .container {
   height: 100%;
-  margin: 16px;
+  text-align: center;
   display: flex;
-  justify-content: center;
   flex-direction: column;
+}
+
+.activity-block {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
+  visibility: collapse;
+}
+
+.title-block {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.btn {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  position: absolute;
+  border: 1px solid #46b9c9;
+  background: transparent;
+  color: #46b9c9;
 }
 
 .title {
-  text-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.start {
-  height: 100px;
-  width: 100px;
-  visibility: visible;
-}
-
-.shake {
-  visibility: hidden;
-}
-
-.skema {
-  bottom: 10%;
   position: absolute;
-  width: 50%;
   visibility: hidden;
 }
-.link-title {
-  text-align: center;
-  margin-bottom: 40px;
-}
-.answers {
+
+.buttons {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: auto;
+  flex: 2;
+  flex-direction: column;
+  justify-content: flex-start;
+  visibility: hidden;
 }
 
-button {
-  background-color: transparent;
-  height: 60px;
-  width: 60px;
+.didyou {
+  margin-bottom: 12px;
+}
+
+.buttons p {
+  font-size: small;
+  margin-bottom: 24px;
+  opacity: 0.4;
+}
+
+.small-btn {
+  height: 50px;
+  width: 50px;
+  background: transparent;
   border: 1px solid #46b9c9;
   border-radius: 50px;
   color: #46b9c9;
+  margin: 24px;
 }
