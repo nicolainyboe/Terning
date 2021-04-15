@@ -75,7 +75,7 @@ function startDeviceMotion() {
                     window.addEventListener("devicemotion", handleDeviceMotion, false);
                     document.getElementById("start").style.visibility = "collapse";
                     document.getElementById("title").style.visibility = "visible";
-                    diceAudio.play();
+                    //diceAudio.play();
                 }
             })
             .catch(console.log("Vi har ikke fået adgang til DeviceMotion"));
