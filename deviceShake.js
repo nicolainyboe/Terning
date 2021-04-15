@@ -39,18 +39,22 @@ let timeout = false;
 
 let diceAudio = document.getElementById("myAudio");
 
+
+
 function handleDeviceMotion(e) {
     valX = e.acceleration.x;
     valX = Math.floor(valX);
     let tolerance = 20;
     if (threshold(valX, tolerance)) {
         if (canIThrow == true && timeout == false) {
+
             let number = Math.floor(Math.random() * 31);
+
             diceAudio.muted = false;
             document.getElementById("title").style.visibility = "collapse";
-            //   document.getElementById("activity").style.visibility = "visible";
+            document.getElementById("activity-block").style.visibility = "visible";
             document.getElementById("buttons").style.visibility = "visible";
-            document.getElementsByClassName("activity").innerHTML = tasks[number];
+            document.getElementById("activity").innerHTML = tasks[number]
             throws++;
             diceAudio.play();
             if (throws == 2) {
