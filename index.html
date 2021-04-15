@@ -8,11 +8,16 @@
     <title>Dice Your Loneliness Up</title>
   </head>
 
-  <body onload="startDeviceMotion()">
+  <body>
     <div class="container">
       <section class="title-block">
         <div class="title">
-          <h3>Ryst din telefon for at få en aktivitet!</h3>
+          <button id="start" class="start" onclick="startDeviceMotion()">
+            Tryk her for at starte
+          </button>
+          <h3 class="shake" id="title">
+            Ryst din telefon for at få en aktivitet!
+          </h3>
           <h3 id="activity"></h3>
         </div>
       </section>

@@ -21,6 +21,10 @@ body {
   text-align: center;
 }
 
+.shake {
+  visibility: hidden;
+}
+
 .skema {
   bottom: 10%;
   position: absolute;
@@ -45,4 +49,9 @@ button {
   border: 1px solid #ffa8a8;
   border-radius: 50px;
   color: #ffa8a8;
+}
+
+.start {
+  height: 100px;
+  width: 100px;
 }
