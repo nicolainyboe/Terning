@@ -6,7 +6,6 @@ body {
   background: #f0f4f4;
   color: #46b9c9;
   height: 100vh;
-  overflow: hidden;
 }
 
 .container {
@@ -22,7 +21,7 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  visibility: collapse;
+  /* visibility: collapse; */
 }
 
 .title-block {
