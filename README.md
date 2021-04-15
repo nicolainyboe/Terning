@@ -1,3 +1,1 @@
 # Terning undersøgelse
-
-din mor
