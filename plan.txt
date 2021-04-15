@@ -1,0 +1,7 @@
+1. Device Motion implmentering
+2. Threshold 
+3. Html side
+4. Random Pick Task From Array
+5. True/False opsætning
+5. Finetuning af html side 
+6. Link til spørgeskemaer

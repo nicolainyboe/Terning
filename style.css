@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap");
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "ABeeZee", sans-serif;
+  background: #fffcf5;
+  color: #ffa8a8;
+  margin: 24px;
+  border: 1px solid black;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+}
+
