@@ -59,6 +59,7 @@ function handleDeviceMotion(e) {
             diceAudio.play();
             if (throws == 2) {
                 canIThrow = false;
+                document.getElementById("nomorethrows").innerHTML = "Kom tilbage og prøv og ryst i morgen igen"
             }
             timeout = true;
             setTimeout(() => {
@@ -66,7 +67,8 @@ function handleDeviceMotion(e) {
             }, 3000);
         }
 
-        // do stuff if the difference between val and previous value if greater than tolerance
+
+
     }
 }
 
