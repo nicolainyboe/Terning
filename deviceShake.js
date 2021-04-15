@@ -35,13 +35,14 @@ let tasks = [
 let valX;
 let canIThrow = true;
 let throws = -1;
+let timeout = false;
 
 function handleDeviceMotion(e) {
   valX = e.acceleration.x;
   valX = Math.floor(valX);
   let tolerance = 20;
   if (threshold(valX, tolerance)) {
-    if (canIThrow == true) {
+    if (canIThrow == true && timeout == false) {
       let number = Math.floor(Math.random() * 31);
       document.getElementById("title").style.visibility = "collapse";
       document.getElementById("activity").style.visibility = "visible";
@@ -51,6 +52,10 @@ function handleDeviceMotion(e) {
       if (throws == 2) {
         canIThrow = false;
       }
+      timeout = true;
+      setTimeout(() => {
+        timeout = false;
+      }, 3000);
     }
 
     // do stuff if the difference between val and previous value if greater than tolerance
