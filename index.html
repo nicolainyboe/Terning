@@ -1,44 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Dice Your Loneliness Up</title>
-  </head>
 
-  <body>
-    <audio id="myAudio">
-      <source src="sound/dice.mp3" type="audio/mp3" />
-    </audio>
-    <div class="container">
-      <div class="activity-block">
-        <h3 class="activity" id="activity"></h3>
-      </div>
-      <div class="title-block">
-        <button class="btn" id="start" onclick="startDeviceMotion()">
-          Tryk her for at starte
-        </button>
-        <h2 class="title" id="title">Ryst din telefon</h2>
-      </div>
-      <div class="buttons">
-        <h3 class="didyou">Vælger du at udføre aktiviteten?</h3>
-        <p>
-          Dit svar vil føre dig videre til et anonymt spørgeskema som led i
-          vores speciale.
-        </p>
-        <div class="buttons-container">
-          <a href="https://stiso.typeform.com/to/oFxPR95F" target="_blank"
-            ><button class="small-btn">Ja</button></a
-          >
-          <a href="https://stiso.typeform.com/to/bOF5e9MQ" target="_blank">
-            <button href="#" class="small-btn">Nej</button>
-          </a>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Dice Your Loneliness Up</title>
+</head>
+
+<body>
+  <audio id="myAudio">
+    <source src="sound/dice.mp3" type="audio/mp3" />
+  </audio>
+  <div class="container">
+    <div class="activity-block">
+      <h3 class="activity" id="activity"></h3>
+    </div>
+    <div class="title-block">
+      <button class="btn" id="start" onclick="startDeviceMotion()">
+        Tryk her for at starte
+      </button>
+      <h2 class="title" id="title">Ryst din telefon</h2>
+    </div>
+    <div class="buttons">
+      <h3 class="didyou">Vælger du at udføre aktiviteten?</h3>
+      <p>
+        Dit svar vil føre dig videre til et anonymt spørgeskema som led i
+        vores speciale.
+      </p>
+      <div class="buttons-container">
+        <a href="https://stiso.typeform.com/to/oFxPR95F" target="_blank"><button class="small-btn">Ja</button></a>
+        <a href="https://stiso.typeform.com/to/bOF5e9MQ" target="_blank">
+          <button href="#" class="small-btn">Nej</button>
+        </a>
       </div>
     </div>
-  </body>
-  <script src="threshold.js"></script>
-  <script src="deviceShake.js"></script>
+  </div>
+</body>
+<script src="threshold.js"></script>
+<script src="deviceShake.js"></script>
+
 </html>
