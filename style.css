@@ -3,8 +3,8 @@
 body {
   display: block;
   font-family: "ABeeZee", sans-serif;
-  background: #fffcf5;
-  color: #ffa8a8;
+  background: #f0f4f4;
+  color: #46b9c9;
   height: 100vh;
 }
 
@@ -54,7 +54,7 @@ button {
   background-color: transparent;
   height: 60px;
   width: 60px;
-  border: 1px solid #ffa8a8;
+  border: 1px solid #46b9c9;
   border-radius: 50px;
-  color: #ffa8a8;
+  color: #46b9c9;
 }

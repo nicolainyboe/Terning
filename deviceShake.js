@@ -34,7 +34,7 @@ let tasks = [
 
 let valX;
 let canIThrow = true;
-let throws = -1;
+let throws = 0;
 let timeout = false;
 
 function handleDeviceMotion(e) {
