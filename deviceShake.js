@@ -37,6 +37,8 @@ let canIThrow = true;
 let throws = 0;
 let timeout = false;
 
+let diceAudio = document.getElementById("myAudio");
+
 function handleDeviceMotion(e) {
     valX = e.acceleration.x;
     valX = Math.floor(valX);
@@ -48,6 +50,7 @@ function handleDeviceMotion(e) {
             document.getElementById("activity").style.visibility = "visible";
             document.getElementById("activity").innerHTML = tasks[number];
             throws++;
+            diceAudio.play();
             if (throws == 2) {
                 canIThrow = false;
             }

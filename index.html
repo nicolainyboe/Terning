@@ -1,38 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Dice Your Loneliness Up</title>
-  </head>
+</head>
 
-  <body>
+<body>
+    <audio id="myAudio">
+        <source src="sound/dice.mp3" type="audio/mp3">
+    </audio>
     <div class="container">
-      <section class="title-block">
-        <div class="title">
-          <button id="start" class="start" onclick="startDeviceMotion()">
-            Tryk her for at starte
-          </button>
-          <h3 class="shake" id="title">
-            Ryst din telefon for at få en aktivitet!
-          </h3>
-          <h3 id="activity"></h3>
-        </div>
-      </section>
+        <section class="title-block">
+            <div class="title">
+                <button id="start" class="start" onclick="startDeviceMotion()">
+                    Tryk her for at starte
+                </button>
+                <h3 class="shake" id="title">
+                    Ryst din telefon for at få en aktivitet!
+                </h3>
+                <h3 id="activity"></h3>
+            </div>
+        </section>
 
-      <section class="skema">
-        <div class="links">
-          <h4 class="link-title">Gjorde du det?</h4>
-          <div class="answers">
-            <button>Ja</button>
-            <button>Nej</button>
-          </div>
-        </div>
-      </section>
+        <section class="skema">
+            <div class="links">
+                <h4 class="link-title">Gjorde du det?</h4>
+                <div class="answers">
+                    <button>Ja</button>
+                    <button>Nej</button>
+                </div>
+            </div>
+        </section>
     </div>
-  </body>
-  <script src="threshold.js"></script>
-  <script src="deviceShake.js"></script>
+</body>
+<script src="threshold.js"></script>
+<script src="deviceShake.js"></script>
+
 </html>
