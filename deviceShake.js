@@ -64,7 +64,6 @@ function handleDeviceMotion(e) {
                 timeout = false;
             }, 3000);
         }
-        document.getElementById("test").innerHTML = throws;
         if (throws == 1) {
             let throwsleft = "Ryst igen, hvis du vil bruge dit sidste forsøg";
             document.getElementById("shakes-left").innerHTML = throwsleft;
