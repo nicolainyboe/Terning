@@ -71,7 +71,7 @@ function handleDeviceMotion(e) {
         } else if (throws == 2) {
             let yourdonefortoday =
                 "Du har ikke flere forsøg, kom tilbage igen i morgen";
-            document.getElementById("shakes-left").innerhtml = yourdonefortoday;
+            document.getElementById("shakes-left").innerHTML = yourdonefortoday;
         }
     }
 }
