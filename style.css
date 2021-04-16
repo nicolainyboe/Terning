@@ -44,9 +44,17 @@ body {
   color: #46b9c9;
 }
 
-.title {
+.title-container {
+  display: flex;
   position: absolute;
   visibility: hidden;
+  flex-direction: column;
+}
+
+.subtitle {
+  font-size: small;
+  margin-bottom: 24px;
+  opacity: 0.4;
 }
 
 .buttons {

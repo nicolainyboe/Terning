@@ -39,8 +39,6 @@ let timeout = false;
 
 let diceAudio = document.getElementById("myAudio");
 
-
-
 function handleDeviceMotion(e) {
     valX = e.acceleration.x;
     valX = Math.floor(valX);
@@ -75,8 +73,10 @@ function handleDeviceMotion(e) {
             document.getElementById("shakes-left").innerhtml = yourdonefortoday;
         }
 
+
     }
 }
+
 
 function startDeviceMotion() {
     document.getElementById("myAudio").muted = true;
@@ -87,7 +87,8 @@ function startDeviceMotion() {
                 if (permissionState === "granted") {
                     window.addEventListener("devicemotion", handleDeviceMotion, false);
                     document.getElementById("start").style.visibility = "collapse";
-                    document.getElementById("title").style.visibility = "visible";
+                    document.getElementById("title-container").style.visibility =
+                        "visible";
                 }
             })
             .catch(console.log("Vi har ikke fået adgang til DeviceMotion"));
@@ -95,6 +96,6 @@ function startDeviceMotion() {
     else {
         window.addEventListener("devicemotion", handleDeviceMotion, false);
         document.getElementById("start").style.visibility = "collapse";
-        document.getElementById("title").style.visibility = "visible";
+        document.getElementById("title-container").style.visibility = "visible";
     }
 }
