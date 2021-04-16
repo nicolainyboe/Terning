@@ -67,7 +67,13 @@ function handleDeviceMotion(e) {
             }, 3000);
         }
 
-
+        if (throws == 1) {
+            let throwsleft = "Ryst igen, hvis du vil bruge dit sidste forsøg"
+            document.getElementById("shakes-left").innerHTML = throwsleft;
+        } else if (throws == 2) {
+            let yourdonefortoday = "Du har ikke flere forsøg, kom tilbage igen i morgen"
+            document.getElementById("shakes-left").innerhtml = yourdonefortoday;
+        }
 
     }
 }
