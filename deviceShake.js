@@ -48,7 +48,7 @@ function handleDeviceMotion(e) {
       let number = Math.floor(Math.random() * 31);
 
       diceAudio.muted = false;
-      document.getElementById("title").style.visibility = "collapse";
+      document.getElementById("title-container").style.visibility = "collapse";
       document.getElementById("activity-block").style.visibility = "visible";
       document.getElementById("buttons").style.visibility = "visible";
       document.getElementById("activity").innerHTML = tasks[number];
