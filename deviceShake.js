@@ -64,11 +64,11 @@ function handleDeviceMotion(e) {
                 timeout = false;
             }, 3000);
         }
-
-        if (throws == 0) {
+        document.getElementById("test").innerHTML = throws;
+        if (throws == 1) {
             let throwsleft = "Ryst igen, hvis du vil bruge dit sidste forsøg";
             document.getElementById("shakes-left").innerHTML = throwsleft;
-        } else if (throws == 1) {
+        } else if (throws == 2) {
             let yourdonefortoday =
                 "Du har ikke flere forsøg, kom tilbage igen i morgen";
             document.getElementById("shakes-left").innerhtml = yourdonefortoday;
